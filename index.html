@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Rania</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Local Audio Player -->
+    <audio id="bg-music" src="lagu.mp3" loop preload="auto"></audio>
+    
+    <!-- Top Navigation / Header -->
+    <header>
+        <div class="logo">
+            <div class="snoopy-head-icon placeholder-img snoopy-head" data-img-name="snoopy-head"></div>
+            <span>For You, Rania &hearts;</span>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-target="0">Home</button>
+            <button class="nav-btn" data-target="1">Journey</button>
+            <button class="nav-btn" data-target="2">Memories</button>
+            <button class="nav-btn" data-target="3">Letters</button>
+        </nav>
+        <div class="music-btn" id="music-toggle-btn">
+            <span>You're On Your Own, Kid &#9835;</span>
+        </div>
+    </header>
+
+    <!-- Side Navigation Arrows -->
+    <div class="nav-arrow prev-arrow" id="prev-btn" style="display: none;">&lt;</div>
+    <div class="nav-arrow next-arrow" id="next-btn">&gt;</div>
+
+    <div class="floating-hearts-container"></div>
+
+    <!-- Main Slider -->
+    <main class="slider-container">
+        <div class="slider-track">
+            
+            <!-- LAYER 1: Halaman Pembuka -->
+            <section class="slide" id="layer-1">
+                <div class="content-left">
+                    <h1 class="title">Happy<br>Birthday<br><span class="highlight">Rania &hearts;</span></h1>
+                    
+                    <div class="sticky-note">
+                        <p class="note-title">Today is all about you!</p>
+                        <p class="note-desc">Semoga hari ini penuh dengan kebahagiaan, tawa, dan hal-hal baik yang kamu suka.</p>
+                    </div>
+
+                    <button class="action-btn next-btn" data-target="1">Start Journey &rarr;</button>
+
+                    <div class="snoopy-sitting-heart placeholder-img snoopy-heart" data-img-name="snoopy-heart"></div>
+                </div>
+                
+                <div class="content-right polaroid-gallery">
+                    <div class="polaroid p1">
+                        <div class="tape"></div>
+                        <div class="photo placeholder-img photo-1" data-img-name="photo-1"></div>
+                    </div>
+                    <div class="polaroid p2 main-photo">
+                        <div class="tape"></div>
+                        <div class="photo placeholder-img photo-2" data-img-name="photo-2"></div>
+                        <div class="sticky-note-small">
+                            <p>Enjoy your<br>special day!<br>&hearts;</p>
+                        </div>
+                    </div>
+                    <div class="polaroid p3">
+                        <div class="tape"></div>
+                        <div class="photo placeholder-img photo-3" data-img-name="photo-3"></div>
+                    </div>
+                    
+                    <!-- Decorative flowers -->
+                    <div class="flower f1 placeholder-img flower-1" data-img-name="flower-1"></div>
+                    <div class="flower f2 placeholder-img flower-2" data-img-name="flower-2"></div>
+                </div>
+            </section>
+
+            <!-- LAYER 2: Perjalanan Rania -->
+            <section class="slide" id="layer-2">
+                <div class="slide-header">
+                    <h2>Rania's Journey &hearts;</h2>
+                    <p>Setiap langkah kecilmu adalah bagian dari perjalanan yang luar biasa.</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="icon-box placeholder-img icon-calendar" data-img-name="icon-calendar">📅</div>
+                        <p class="tl-title">Lahir</p>
+                        <p class="tl-desc">26 Mei 2010</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="icon-box placeholder-img icon-location" data-img-name="icon-location">📍</div>
+                        <p class="tl-title">Lahir di</p>
+                        <p class="tl-desc">Sukoharjo</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="icon-box placeholder-img icon-grad" data-img-name="icon-grad">🎓</div>
+                        <p class="tl-title">Sekarang</p>
+                        <p class="tl-desc">Terus belajar dan<br>jadi pribadi hebat</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="icon-box placeholder-img icon-heart" data-img-name="icon-heart">💖</div>
+                        <p class="tl-title">Harapan</p>
+                        <p class="tl-desc">Semoga semua<br>impianmu tercapai</p>
+                    </div>
+                </div>
+
+                <div class="snoopy-sleeping placeholder-img snoopy-sleep" data-img-name="snoopy-sleep"></div>
+            </section>
+
+            <!-- LAYER 3: Kenangan Indah -->
+            <section class="slide" id="layer-3">
+                <div class="slide-header">
+                    <h2>Kenangan Indah &hearts;</h2>
+                    <p>Momen-momen berharga yang tak akan terlupakan.</p>
+                </div>
+
+                <div class="hanging-gallery">
+                    <div class="string-line"></div>
+                    
+                    <div class="hanging-polaroid hp1">
+                        <div class="clip placeholder-img clip" data-img-name="clip"></div>
+                        <div class="photo placeholder-img photo-4" data-img-name="photo-4"></div>
+                    </div>
+                    
+                    <div class="hanging-polaroid hp2">
+                        <div class="clip placeholder-img clip" data-img-name="clip"></div>
+                        <div class="photo placeholder-img photo-5" data-img-name="photo-5"></div>
+                    </div>
+                    
+                    <div class="hanging-polaroid hp3">
+                        <div class="clip placeholder-img clip" data-img-name="clip"></div>
+                        <div class="photo placeholder-img photo-6" data-img-name="photo-6"></div>
+                    </div>
+                </div>
+
+                <div class="snoopy-sitting placeholder-img snoopy-sit" data-img-name="snoopy-sit"></div>
+            </section>
+
+            <!-- LAYER 4: Surat Spesial -->
+            <section class="slide" id="layer-4">
+                <div class="slide-header">
+                    <h2>Surat Spesial &hearts;</h2>
+                    <p>Untuk seseorang yang sangat spesial.</p>
+                </div>
+
+                <div class="letter-section">
+                    <!-- The Letter Paper -->
+                    <div class="letter-paper">
+                        <div class="paper-content">
+                            <p>Happy Birthday! Jujur aku beneran bersyukur banget punya temen kaya kamu yang sabar menghadapi omelan terus cerita cerita random ku, terus makasih banget yaa udah hadir dan masih nyempetin waktu buat ngeladenin egoisku.</p>
+                            <br>
+                            <p>terus makasih banget, uda mau dengerin yapping-an ku, uda mau dengerin cerita cerita ku yang ga penting, terus makasih bangett ya uda jadi orang paling sabar yang pernah ku temui, ga ngeluh apapun. walau aku banyak maunya, aku harap di umur kamu yang ke 16 ini semakin banyak hal yang berbuah manis ke kamu, dikelilingi orang baik, aslam engga sering kambuh, terus kamu harus tetap bertumbuh menjadi orang baik yang aku kenal, keren Ran uda berani jalanin hari, terus kalau kamu ada masalah bisa cerita kok ke aku, aku bakalan ada selalu disini buat support kamu kemanapun kamu tumbuh, baik pas lagi masa senang ataupun pada saat sedih.</p>
+                            <p class="signature-line">rezchus</p>
+                        </div>
+                    </div>
+
+                    <div class="envelope-container closed">
+                        <!-- Closed Envelope View -->
+                        <div class="envelope-closed placeholder-img envelope-closed" data-img-name="envelope-closed"></div>
+                        
+                        <!-- Open Envelope View -->
+                        <div class="envelope-open placeholder-img envelope-open" data-img-name="envelope-open"></div>
+                    </div>
+
+                    <div class="letter-actions">
+                        <button class="action-btn" id="open-letter-btn">Buka Surat &xmail;</button>
+                        <button class="action-btn secondary-btn" id="back-home-btn" style="display: none;" data-target="0">Back to Home &house;</button>
+                    </div>
+                </div>
+
+                <div class="snoopy-reading placeholder-img snoopy-read" data-img-name="snoopy-read"></div>
+            </section>
+
+        </div>
+
+        <!-- Fluffy Corner Clouds -->
+        <div class="bottom-clouds-container">
+            <div class="bottom-cloud-left">
+                <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="cloudGradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fcc8d1; stop-opacity:0.85" />
+                            <stop offset="100%" style="stop-color:#f4a0b3; stop-opacity:0.95" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M 0,150 L 0,85 C 10,75 25,75 35,85 C 50,65 75,65 90,85 C 110,55 145,55 165,85 C 185,65 215,65 235,90 C 255,80 275,90 280,110 C 290,105 300,120 300,150 Z" fill="url(#cloudGradLeft)"/>
+                </svg>
+            </div>
+            <div class="bottom-cloud-right">
+                <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="cloudGradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fcc8d1; stop-opacity:0.85" />
+                            <stop offset="100%" style="stop-color:#f4a0b3; stop-opacity:0.95" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M 300,150 L 300,85 C 290,75 275,75 265,85 C 250,65 225,65 210,85 C 190,55 155,55 135,85 C 115,65 85,65 65,90 C 45,80 25,90 20,110 C 10,105 0,120 0,150 Z" fill="url(#cloudGradRight)"/>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
