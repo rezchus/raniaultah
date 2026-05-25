@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function playAudio() {
         bgMusic.play().then(() => {
             isPlaying = true;
-            musicBtn.innerHTML = "<span>You're On Your Own, Kid &#10074;&#10074;</span>";
+            musicBtn.innerHTML = "<span>Daylight &#10074;&#10074;</span>";
         }).catch(err => {
             console.log("Autoplay blocked until user interacts.");
         });
@@ -205,10 +205,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (isPlaying) {
             bgMusic.pause();
-            musicBtn.innerHTML = "<span>You're On Your Own, Kid &#9658;</span>";
+            musicBtn.innerHTML = "<span>Daylight &#9658;</span>";
         } else {
             bgMusic.play();
-            musicBtn.innerHTML = "<span>You're On Your Own, Kid &#10074;&#10074;</span>";
+            musicBtn.innerHTML = "<span>Daylight &#10074;&#10074;</span>";
         }
         isPlaying = !isPlaying;
     });
